@@ -9,7 +9,7 @@
 		<span style="color:#60D978;">&nbsp;欢迎各位提出意见</span>
 	</p>
 	<p style="color:#333333;font-family:Helvetica, arial, freesans, clean, sans-serif;font-size:15px;">
-		<span style="color:#60D978;">全部代码将不时更新</span>
+		<span style="color:#60D978;">全部代码将不定时更新</span>
 	</p>
 </p>
 <p>
