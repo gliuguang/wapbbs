@@ -11,20 +11,46 @@ class writedbView extends View{
 		</div>
 		
 		<!--主导航栏标题 -->
-	    <div id="main-nav-b1">配置数据库</div>
-		
-		<!--错误提示区 -->
+	    <div id="main-nav-b1">配置数据库</div>';
+	if($_COOKIE['site_error']!='')
+	{
+	echo '<!--错误提示区 -->
 		<div class="top-info">
 			<p class="txt-warning3">数据库连接失败！<br/></p>
 		</div>
 			  
 	</div>';
-	echo '<div class="module-content">请您输入的网址尝试重新访问，如果问题持续存在，请与我们客服联系。</div>';
+	$_COOKIE['site_error']='';
+	}
+	echo '<form id="regform" action="index.php?controller=do_install" method="post">
+					<p>请输入mysql数据库地址</p>
+					<p>
+						<input type="text" name="db_host" value="localhost" maxlength="38" />
+					</p>
+					<p>请输入mysql数据库用户名</p>
+					<p>
+						<input type="text" name="db_uesr" value="root" maxlength="38" />
+					</p>
+					<p>请输入数据库密码</p>
+					<p>
+						<input type="text" name="db_pass" value="" maxlength="38" />
+					</p>
+					<p>请输入数据库名</p>
+					<p>
+					   <input type="text" name="db_name" value="" maxlength="38" />
+					</p>
+					<p>请输入表前缀</p>
+					<p>
+						<input type="text" name="table_pre" value="liuguang_" maxlength="38" />
+					</p>
+					<p>
+					若填写无误，可进行下一步<br />
+						<input class="btn-s-131" type="submit" name="action" id="action" value="下一步 " /><br />
+					</p>
+	</form>';
 	echo '	<div id="footer">
 		   <p>
-			<a href="index.php?controller=index">返回首页</a>-
-			<a href="index.php?controller=bbs">论坛</a>-
-            <a href="index.php?controller=kongjian">空间</a>
+		   powered by 流光
 		   </p>
 		   <p class="txt-fade">
 			流光报时('.date('Y-m-d G:i:s').')
