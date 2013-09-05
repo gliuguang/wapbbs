@@ -6,7 +6,7 @@ class indexController extends Controller{
 		if($this->is_install())
 		$this->show_index();
 		else
-		{header('location:index.php?controller=install&step=1');exit();}
+		{header('location:index.php?controller=install');exit();}
 	}
 	public function is_install()
 	{
