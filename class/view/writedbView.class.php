@@ -44,7 +44,7 @@ class writedbView extends View{
 						<input type="text" name="table_pre" value="liuguang_" maxlength="38" />
 					</p>
 					<p>
-					若填写无误，可进行下一步<br />
+					你可以填写本表，也可直接修改config/dbcfg.php,并修改config/cfg.php的set_db_ok为true<br />
 						<input class="btn-s-131" type="submit" name="action" id="action" value="下一步 " /><br />
 					</p>
 	</form>';
