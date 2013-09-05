@@ -20,6 +20,11 @@ class installController extends Controller{
 		}
 		elseif($install_step==2)
 		{
+		// 显示执行按钮
+		$this->show_db_submit();
+		}
+		elseif($install_step==3)
+		{
 		// 显示填写网站管理员帐号信息的表单
 		$this->show_admin_form();
 		}
@@ -37,10 +42,12 @@ class installController extends Controller{
 	return 0;
 	elseif(!$config->get_var('set_db_ok'))
 	return 1;
-	elseif(!$config->get_var('set_admin_ok'))
+	elseif(!$config->get_var('install_db_ok'))
 	return 2;
-	else
+	elseif(!$config->get_var('set_admin_ok'))
 	return 3;
+	else
+	return 4;
 	}
 	public function show_db_form()
 	{
