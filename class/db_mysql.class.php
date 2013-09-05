@@ -4,7 +4,7 @@ class db_mysql
 /* mysql数据库驱动类 */
 	public function get_instance()
 	{
-	$config=cfg_class::connect();
+	$config=cfg_class::connect(CONFIG_PATH.'dbcfg.php');
 	$db_host=$config->get_var('db_host');
 	$db_port=$config->get_var('db_port');
 	$db_user=$config->get_var('db_user');
