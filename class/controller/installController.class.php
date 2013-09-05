@@ -42,5 +42,11 @@ class installController extends Controller{
 	else
 	return 3;
 	}
+	public function show_db_form()
+	{
+	//要求填写数据库信息
+	$myapp=new writedbView();
+	$myapp->runApp();
+	}
 }
 ?>
