@@ -10,7 +10,7 @@ class indexController extends Controller{
 	}
 	public function is_install()
 	{
-		return is_file('install.lock');
+		return is_file(CONFIG_PATH.'install.lock');
 	}
 }
 ?>
