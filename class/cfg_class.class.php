@@ -20,7 +20,7 @@ $md5_name=md5($file_name);
 return self::$instance[$md5_name];
 }
 private function __construct($file_name){
-if(file_exists($file_name))
+if(is_file($file_name))
 include $file_name;
 else
 $this->change=true;
