@@ -11,4 +11,5 @@
 .PHP 5.2.3<br />
 .MySQL 5.0.45<br />
 .phpMyAdmin-2.10.2<br />
-.本地测试地址：http://localhost/wapbbs
+.本地测试地址：http://localhost/wapbbs<br />
+.....
